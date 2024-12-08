@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+}
+
+@layer utilities {
+  .primary-color {
+    background: rgb(238, 174, 227);
+    background: linear-gradient(
+      90deg,
+      rgba(238, 174, 227, 1) 0%,
+      rgba(104, 10, 239, 1) 100%
+    );
+  }
+}

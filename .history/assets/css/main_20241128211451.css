@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* From https://css.glass */
+  background: #ffffff;
+}
+
+@layer utilities {
+  .panel-bg {
+    background-color: blanchedalmond;
+  }
+}

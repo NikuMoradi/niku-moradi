@@ -1,0 +1,4 @@
+<template>
+  <LeftPanel />
+  <default />
+</template>
