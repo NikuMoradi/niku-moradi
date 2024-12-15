@@ -12,13 +12,13 @@
         <i class="block min-[1260px]:hidden fa fa-home"></i>
       </NuxtLink>
 
-      <!-- Experience -->
+      <!-- Education -->
       <NuxtLink
-        to="/experience"
+        to="/education"
         class="py-2 px-6 text-lg text-gray-500 backdrop-blur-md rounded-3xl font-semibold tracking-wide hover:text-gray-700 transition duration-200"
         exact-active-class=" border border-gray-400 text-zinc-800 border-gray-300 "
       >
-        <span class="hidden min-[1260px]:block">Experience</span>
+        <span class="hidden min-[1260px]:block">Education</span>
         <i class="block min-[1260px]:hidden fa-regular fa-user"></i>
       </NuxtLink>
 

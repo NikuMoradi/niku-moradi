@@ -4,11 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ["~/assets/css/main.css"],
 
-  // runtimeConfig: {
-  //   public: {
-  //     disableHints: true, // This suppresses runtime hints like unused pages warnings
-  //   },
-  // },
+  runtimeConfig: {
+    public: {
+      disableHints: true, // This suppresses runtime hints like unused pages warnings
+    },
+  },
   // pages: false, // Disable Nuxt's pages feature
 
   postcss: {

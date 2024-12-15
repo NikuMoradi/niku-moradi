@@ -1,6 +1,8 @@
 <template>
   <Hero />
-  <Experience />
+  <Education />
+  <Projects />
+  <Blog />
 </template>
 
 <style></style>

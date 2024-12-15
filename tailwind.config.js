@@ -21,6 +21,9 @@ export default {
         "custom-gradient":
           "linear-gradient(15deg, rgb(143, 86, 204), rgb(93, 78, 196))",
       },
+      scale: {
+        102: "1.02",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],

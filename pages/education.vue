@@ -1,3 +1,3 @@
 <template>
-  <Experience />
+  <Education />
 </template>

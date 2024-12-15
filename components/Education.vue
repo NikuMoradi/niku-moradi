@@ -1,11 +1,11 @@
 <template>
-  <Section id="experience">
-    <div class="max-w-5xl px-2 my-20">
+  <section id="education">
+    <div class="max-w-5xl min-h-screen px-2 my-20">
       <div class="mb-16">
         <h3
           class="text-4xl font-bold leading-normal bg-text-transparent bg-clip-text bg-custom-gradient text-transparent"
         >
-          My Experinces
+          My Education
         </h3>
       </div>
       <div class="flex flex-col">
@@ -93,5 +93,5 @@
         </div>
       </div>
     </div>
-  </Section>
+  </section>
 </template>
