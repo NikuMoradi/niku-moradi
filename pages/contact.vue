@@ -1,3 +1,3 @@
 <template>
-  <Blog />
+  <Contact />
 </template>

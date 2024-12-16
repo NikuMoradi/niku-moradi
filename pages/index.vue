@@ -1,8 +1,9 @@
 <template>
+  <LeftPanel class="block 780:hidden" />
   <Hero />
   <Education />
   <Projects />
-  <Blog />
+  <Contact />
 </template>
 
 <style></style>

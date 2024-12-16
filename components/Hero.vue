@@ -6,19 +6,28 @@
         <img src="/assets/img/svg-top.svg " alt="Decorative" />
       </div>
       <div class="mt-[20rem] z-10">
+        <!-- Banner Text for supported typed.js -->
         <p
-          class="text-5xl lg:text-6xl font-bold bg-text-transparent bg-clip-text bg-custom-gradient text-transparent"
+          v-if="!showFallbackText"
+          class="text-4xl 780:text-5xl font-bold bg-text-transparent bg-clip-text bg-custom-gradient text-transparent"
         >
-          I am a
+          I'm a
           <span
             id="dynamicText"
             class="text-transparent bg-clip-text bg-custom-gradient"
           ></span>
         </p>
+        <!-- Banner Text for not supported tuped.js -->
+        <p
+          v-if="showFallbackText"
+          class="text-4xl font-bold bg-text-transparent bg-clip-text bg-custom-gradient text-transparent"
+        >
+          I am a Designer, Developer, Creator.
+        </p>
       </div>
       <div class="h-2 mt-[2rem] z-10">
         <h1
-          class="text-3xl lg:text-4xl xl:text-5xl leading-10 font-bold bg-text-transparent bg-clip-text bg-custom-gradient text-transparent"
+          class="text-3xl leading-10 font-bold bg-text-transparent bg-clip-text bg-custom-gradient text-transparent"
         >
           Let's Make your ideas shine.
         </h1>
@@ -38,15 +47,27 @@
 import Typed from "typed.js";
 
 export default {
-  mounted() {
-    const options = {
-      strings: ["Designer", "Developer", "Creator"],
-      typeSpeed: 80,
-      backSpeed: 50,
-      loop: true,
+  data() {
+    return {
+      showFallbackText: false, // Controls the visibility of the fallback text
     };
+  },
+  mounted() {
+    // Check if Typed.js is available
+    if (typeof Typed !== "undefined") {
+      // Typed.js is supported, initialize it
+      const options = {
+        strings: ["Designer", "Developer", "Creator"],
+        typeSpeed: 80,
+        backSpeed: 50,
+        loop: true,
+      };
 
-    new Typed("#dynamicText", options);
+      new Typed("#dynamicText", options);
+    } else {
+      // Typed.js is not supported, show fallback text
+      this.showFallbackText = true;
+    }
   },
 };
 </script>

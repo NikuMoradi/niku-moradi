@@ -10,6 +10,15 @@ export default {
   ],
 
   theme: {
+    screens: {
+      640: "640px", // Small screens and up
+      780: "780px", // Add your custom breakpoint
+      1000: "1000px", // Medium screens and up
+      1040: "1040px", // Medium screens and up
+      1180: "1180px", // Large screens and up
+      1260: "1260px", // Extra-large screens and up
+    },
+
     extend: {
       fontFamily: {
         sans: ["Syne", "sans-serif"],

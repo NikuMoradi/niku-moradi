@@ -1,13 +1,13 @@
 <template>
   <div
-    class="w-[330px] xl:w-[380px] h-[calc(100vh-4rem)] text-gray-900 flex flex-col items-center bg-slate-100 border border-gray-300 rounded-4xl overflow-hidden"
+    class="780:w-[280px] 780:h-[calc(100vh-1rem)] 1000:w-[350px] bg-white text-gray-900 flex flex-col items-center border border-gray-300 rounded-3xl overflow-hidden"
   >
     <!-- Header-->
     <div class="w-full py-4 flex flex-col items-center justify-center">
       <img
         src="../assets/img/photo_2024-11-28_10-37-05.jpg"
         alt="Profile Picture"
-        class="w-60 h-60 mb-5 border-2 object-cover object-center rounded-4xl"
+        class="w-[70%] h-auto 780:w-48 780:h-48 mb-5 object-cover object-center rounded-3xl"
       />
       <h2 class="text-lg font-bold tracking-wider leading-[16.8px] mb-3">
         Niku Moradi
@@ -17,10 +17,10 @@
     </div>
 
     <!-- middle -->
-    <div class="w-3/4 flex flex-col overflow-y-auto scrollbar-hide">
+    <div class="w-3/4 flex flex-col 780:overflow-y-auto 780:scrollbar-hide">
       <!-- table -->
-      <div class="py-5 text-sm border-b border-gray-300 mb-5">
-        <ul class="space-y-2">
+      <div class="py-2 text-sm border-b border-gray-300 mb-5">
+        <ul class="space-y-1">
           <li class="flex justify-between">
             <h6>Residence:</h6>
             <span class="text-gray-500">Iran</span>
@@ -36,7 +36,7 @@
         </ul>
       </div>
       <!-- Skill Bars -->
-      <div class="space-y-4 pb-5 border-b border-gray-300 mb-5">
+      <div class="space-y-3 pb-5 border-b border-gray-300 mb-5">
         <div>
           <label class="block text-sm">HTML</label>
           <div class="w-full bg-gray-300 h-2 rounded-full">
@@ -101,25 +101,25 @@
 
     <!-- Social Links -->
     <div
-      class="w-full py-4 bg-slate-200 opacity-80 text-center mt-auto text-gray-900"
+      class="w-full py-3 opacity-80 text-center mt-auto text-gray-900 bg-zinc-100"
     >
       <div class="space-x-10">
         <a
-          href="https://t.me/yourusername"
+          href="https://t.me/nikiiii_98"
           target="_blank"
           class="hover:opacity-80"
         >
           <i class="fab fa-telegram fa-lg"></i>
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/NikuMoradi"
           target="_blank"
           class="hover:opacity-80"
         >
           <i class="fab fa-linkedin fa-lg"></i>
         </a>
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/NikuMoradi"
           target="_blank"
           class="hover:opacity-80"
         >
