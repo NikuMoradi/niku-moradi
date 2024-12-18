@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class", // Enables dark mode via a class
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -11,12 +12,13 @@ export default {
 
   theme: {
     screens: {
-      640: "640px", // Small screens and up
-      780: "780px", // Add your custom breakpoint
-      1000: "1000px", // Medium screens and up
-      1040: "1040px", // Medium screens and up
-      1180: "1180px", // Large screens and up
-      1260: "1260px", // Extra-large screens and up
+      640: "640px",
+      780: "780px",
+      1000: "1000px",
+      1040: "1040px",
+      1180: "1180px",
+      1260: "1260px",
+      1280: "1280px",
     },
 
     extend: {
@@ -26,12 +28,17 @@ export default {
       borderRadius: {
         "4xl": "3rem", // Custom rounded size
       },
-      backgroundImage: {
-        "custom-gradient":
-          "linear-gradient(15deg, rgb(143, 86, 204), rgb(93, 78, 196))",
-      },
+      // backgroundImage: {
+      //   "custom-gradient-1":
+      //     "linear-gradient(15deg, rgb(143, 86, 204), rgb(93, 78, 196))",
+      //   "custom-gradient-2":
+      //     "linear-gradient(180deg, rgba(225,186,198,1) 0%, rgba(210,193,229,1) 100%)",
+      // },
       scale: {
         102: "1.02",
+      },
+      colors: {
+        // Add your custom color
       },
     },
   },

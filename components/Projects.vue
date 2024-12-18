@@ -1,95 +1,103 @@
 <template>
   <section id="projects">
-    <div class="max-w-5xl min-h-screen my-20">
-      <div class="mb-6 780:mb-12">
+    <div class="max-w-5xl min-h-screen my-20 py-10">
+      <div class="mb-4 780:mb-9" data-aos="fade-up">
         <h3
-          class="text-3xl 780:text-4xl font-bold leading-normal bg-text-transparent bg-clip-text bg-custom-gradient text-transparent"
+          class="text-3xl 780:text-4xl font-bold leading-normal bg-text-transparent bg-clip-text text-color-light text-transparent dark:text-color-dark"
         >
           My projects
         </h3>
       </div>
 
-      <div class="grid grid-cols-1 1000:grid-cols-2 gap-4">
+      <div
+        class="flex flex-col space-y-7 1260:flex-row 1280:space-x-14 1260:space-y-0"
+      >
         <!-- Project-1  -->
-        <a
-          href="https://css-generator-m.vercel.app/#/"
-          target="_blank"
-          class="780:m-6 block border border-gray-300 rounded-3xl"
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="w-[24rem] h-[31rem] relative flex flex-col space-y-3 border border-gray-300 dark:border-[#303033] rounded-3xl"
         >
-          <div class="hover:scale-102 duration-500">
-            <!-- Image -->
-            <div class="p-6">
-              <img
-                src="/assets/img/cssGenPre-1.png"
-                alt="Project Title"
-                class="w-full"
-              />
-            </div>
-            <!-- Text -->
-            <div class="p-6 space-y-3">
-              <h4 class="text-zinc-800 font-bold text-xl">
+          <!-- Image -->
+          <div class="w-full h-[14rem] overflow-hidden rounded-t-3xl">
+            <img
+              src="/assets/img/cssGenPre-1.png"
+              alt="Project Title"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <!-- Text -->
+          <div class="flex flex-col space-y-3 p-4">
+            <a href="https://css-generator-m.vercel.app/#/" target="_blank">
+              <h4
+                class="text-zinc-800 dark:text-slate-100 font-bold text-xl hover:opacity-70 duration-200"
+              >
                 Css Generator Tool
               </h4>
-              <p class="text-gray-700">
-                This tool is perfect for beginners looking to learn and practice
-                CSS, offering an intuitive interface that makes it easy to
-                create and preview styles effortlessly. Developed as part of my
-                internship for a site-builder app.
-              </p>
-              <div class="flex space-x-2">
-                <span
-                  class="border border-gray-300 rounded-3xl py-1 px-4 text-gray-700 pointer-events-none"
-                  >vue.js</span
-                >
-                <span
-                  class="border border-gray-300 rounded-3xl py-1 px-4 text-gray-700 pointer-events-none"
-                  >quasar</span
-                >
-              </div>
+            </a>
+            <p class="dark:text-gray-200">
+              This tool is perfect for beginners looking to learn and practice
+              CSS, offering an intuitive interface that makes it easy to create
+              and preview styles effortlessly. Developed as part of my
+              internship for a site-builder app.
+            </p>
+            <div class="absolute bottom-5 flex space-x-2">
+              <span
+                class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
+                >vue.js</span
+              >
+              <span
+                class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
+                >quasar</span
+              >
             </div>
           </div>
-        </a>
+        </div>
 
         <!-- Project-2 -->
-        <a
-          href="https://css-generator-m.vercel.app/#/"
-          target="_blank"
-          class="780:m-6 block border border-gray-300 rounded-3xl"
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          class="relative w-[24rem] h-[31rem] flex flex-col space-y-3 border border-gray-300 dark:border-[#303033] rounded-3xl"
         >
-          <div class="hover:scale-102 duration-500">
-            <!-- Image -->
-            <div class="p-6">
-              <img
-                src="/assets/img/cssGenPre-1.png"
-                alt="Project Title"
-                class="w-full"
-              />
-            </div>
-            <!-- Text -->
-            <div class="p-6 space-y-3">
-              <h4 class="text-zinc-800 font-bold text-xl">
-                Css Generator Tool
+          <!-- Image -->
+
+          <div class="w-full h-[14rem] overflow-hidden rounded-t-3xl">
+            <img
+              src="/assets/img/E-commerce.png"
+              alt="Project Title"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <!-- Text -->
+          <div class="flex flex-col space-y-3 p-4">
+            <a href="https://css-generator-m.vercel.app/#/" target="_blank">
+              <h4
+                class="text-zinc-800 dark:text-slate-100 font-bold text-xl hover:opacity-70 duration-200"
+              >
+                SoundM e-commerce shop
               </h4>
-              <p class="text-gray-700">
-                This tool is perfect for beginners looking to learn and practice
-                CSS, offering an intuitive interface that makes it easy to
-                create and preview styles effortlessly. Developed as part of my
-                internship for a site-builder app.
-              </p>
-              <div class="flex space-x-2">
-                <span
-                  class="border border-gray-300 rounded-3xl py-1 px-4 text-gray-700 pointer-events-none"
-                  >vue.js</span
-                >
-                <span
-                  class="border border-gray-300 rounded-3xl py-1 px-4 text-gray-700 pointer-events-none"
-                  >quasar</span
-                >
-              </div>
+            </a>
+            <p class="dark:text-gray-200">Under development...</p>
+            <div class="flex space-x-2 absolute bottom-5">
+              <span
+                class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
+                >vue.js</span
+              >
+              <span
+                class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
+                >Nuxt.js</span
+              >
+              <span
+                class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
+                >Tailwind</span
+              >
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </section>
 </template>
+
+<style></style>

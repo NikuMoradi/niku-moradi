@@ -1,41 +1,60 @@
+@import "aos/dist/aos.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @layer base {
-  body {
-    background-color: #f9f9f9;
+  html {
+    scroll-behavior: smooth;
   }
 
-  /* h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    cursor: default;
-  } */
+  body {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  /* Dark mode background */
+  .dark body {
+    background-color: #000000; /* Black for dark mode */
+  }
 }
 
+@layer components {
+  .text-color-light {
+    background-image: linear-gradient(
+      15deg,
+      rgb(143, 86, 204),
+      rgb(93, 78, 196)
+    );
+  }
+
+  .text-color-dark {
+    background-image: linear-gradient(
+      180deg,
+      rgba(225, 186, 198, 1) 0%,
+      rgba(210, 193, 229, 1) 100%
+    );
+  }
+}
 @layer utilities {
-  .bg-primary-gradient {
+  .bg-color-light {
     background: linear-gradient(
       90deg,
       rgba(238, 174, 227, 1) 0%,
       rgb(133, 63, 230) 100%
     );
   }
-
-  .text-primary-gradient {
-    background: linear-gradient(90deg, #eeaee3 0%, #853fe6 100%);
+  .bg-color-dark {
+    background: linear-gradient(90deg, rgba(225, 186, 198, 1) 0%, #d286e7 100%);
   }
 }
 
-/* Custom scrollbar styling for the entire project */
+/* Custom scrollbar for light mode */
 ::-webkit-scrollbar {
-  width: 8px; /* Width of the scrollbar */
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Scrollbar track background */
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -44,9 +63,27 @@
     rgba(238, 174, 227, 1) 0%,
     rgb(133, 63, 230) 100%
   );
-  border-radius: 4px; /* Rounded edges for the thumb */
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Thumb color on hover */
+  background-color: #555;
+}
+
+/* Custom scrollbar for dark mode */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, rgba(225, 186, 198, 1) 0%, #d286e7 100%);
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }

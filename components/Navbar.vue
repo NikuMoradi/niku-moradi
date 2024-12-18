@@ -7,66 +7,75 @@
         <!-- Home -->
         <NuxtLink
           to="/"
-          class="780:py-6 px-4 1260:py-2 text-lg text-gray-500 backdrop-blur-md rounded-3xl font-semibold tracking-wide hover:text-gray-700 transition duration-200"
-          exact-active-class=" border border-gray-400 text-zinc-800 border-gray-300 "
+          class="780:py-4 780:px-4 1260:py-2 1260:px-5 text-lg text-gray-500 backdrop-blur-md rounded-3xl font-semibold tracking-wide hover:text-gray-700 dark:hover:text-slate-200"
+          exact-active-class=" border text-gray-800 dark:text-slate-200 border-gray-400 dark:border-gray-800 "
         >
-          <span class="hidden 1260:block">Home</span>
-          <i class="block 1260:hidden fa-sm fa fa-home"></i>
+          <span class="hidden 1260:block duration-300">Home</span>
+          <PhosphorIconHouseSimple
+            class="block 1260:hidden"
+            :size="20"
+            weight="bold"
+          />
         </NuxtLink>
 
         <!-- Education -->
         <NuxtLink
           to="/education"
-          class="780:py-6 px-4 1260:py-2 text-lg text-gray-500 backdrop-blur-md rounded-3xl font-semibold tracking-wide hover:text-gray-700 transition duration-200"
-          exact-active-class=" border border-gray-400 text-zinc-800 border-gray-300 "
+          class="780:py-4 780:px-4 1260:py-2 1260:px-5 text-lg text-gray-500 backdrop-blur-md rounded-3xl font-semibold tracking-wide hover:text-gray-700 dark:hover:text-slate-200"
+          exact-active-class=" border   text-gray-800 dark:text-slate-200 border-gray-400 dark:border-gray-800 "
         >
-          <span class="hidden 1260:block">Education</span>
-          <i class="block 1260:hidden fa-sm fa-regular fa-user"></i>
+          <span class="hidden 1260:block duration-300"> Education</span>
+          <PhosphorIconArticle
+            class="block 1260:hidden"
+            :size="20"
+            weight="bold"
+          />
         </NuxtLink>
 
         <!-- Projects -->
         <NuxtLink
           to="/projects"
-          class="780:py-6 px-4 1260:py-2 text-lg text-gray-500 backdrop-blur-md rounded-3xl font-semibold tracking-wide hover:text-gray-700 transition duration-200"
-          exact-active-class=" border border-gray-400 text-zinc-800 border-gray-300 "
+          class="780:py-4 780:px-4 1260:py-2 1260:px-5 text-lg text-gray-500 backdrop-blur-md rounded-3xl font-semibold tracking-wide hover:text-gray-700 dark:hover:text-slate-200"
+          exact-active-class=" border   text-gray-800 dark:text-slate-200 border-gray-400 dark:border-gray-800 "
         >
-          <span class="hidden 1260:block">Projects</span>
-          <i class="block 1260:hidden fa-sm fa-regular fa-rectangle-list"></i>
+          <span class="hidden 1260:block duration-300"> Projects</span>
+          <PhosphorIconSquaresFour
+            class="block 1260:hidden"
+            :size="20"
+            weight="bold"
+          />
         </NuxtLink>
-
-        <!-- Blog -->
-        <!-- <NuxtLink
-          to="/blog"
-          class="780:py-6 px-4 1260:py-2 text-lg text-gray-500 backdrop-blur-md rounded-3xl font-semibold tracking-wide hover:text-gray-700 transition duration-200"
-          exact-active-class="border border-gray-400 text-zinc-800 border-gray-300 "
-        >
-          <span class="hidden 1260:block">Blog</span>
-          <i class="block 1260:hidden fa-sm fa-solid fa-blog"></i>
-        </NuxtLink> -->
-        <!-- Contacy -->
+        <!-- Contact -->
         <NuxtLink
           to="/contact"
-          class="780:py-6 px-4 1260:py-2 text-lg text-gray-500 backdrop-blur-md rounded-3xl font-semibold tracking-wide hover:text-gray-700 transition duration-200"
-          exact-active-class=" border border-gray-400 text-zinc-800 border-gray-300 "
+          class="780:py-4 780:px-4 1260:py-2 1260:px-5 text-lg text-gray-500 backdrop-blur-md rounded-3xl font-semibold tracking-wide hover:text-gray-700 dark:hover:text-slate-200"
+          exact-active-class="   border text-gray-800 dark:text-slate-200 border-gray-400 dark:border-gray-800 "
         >
-          <span class="hidden 1260:block">Contact</span>
-          <i class="block 1260:hidden fa-sm fa-regular fa-rectangle-list"></i>
+          <span class="hidden 1260:block duration-300"> Contact</span>
+          <PhosphorIconEnvelope
+            class="block 1260:hidden"
+            :size="20"
+            weight="bold"
+          />
         </NuxtLink>
       </div>
 
       <!-- Dark Mode and Talk Buttons -->
       <div class="flex space-x-2 items-center">
         <button
-          class="px-4 h-11 text-gray-500 backdrop-blur-md rounded-full hover:text-gray-700 transition duration-200"
+          @click="toggleTheme"
+          class="px-4 h-11 text-gray-500 backdrop-blur-md rounded-full hover:text-gray-700 dark:hover:text-slate-200 transition duration-300"
         >
-          <i class="fa-solid fa-moon fa-sm"></i>
+          <PhosphorIconSun v-if="isDarkMode" :size="20" weight="bold" />
+          <PhosphorIconMoonStars v-else :size="20" weight="bold" />
         </button>
-        <button
-          class="780:py-2 780:px-3 py-3 px-7 rounded-3xl text-lg text-slate-100 bg-primary-gradient"
+        <a
+          href="mailto:NikuMoradi@gmail.com"
+          class="flex items-center max-[800px]:text-sm space-x-2 780:py-2 780:px-5 rounded-3xl text-lg text-slate-100 bg-color-light dark:bg-color-dark hover:opacity-90 transition duration-300"
         >
-          Let's Talk
-          <i class="fa fa-message fa-sm"></i>
-        </button>
+          <span>Let's Talk</span>
+          <PhosphorIconChatDots :size="20" weight="bold" />
+        </a>
       </div>
     </div>
   </div>
@@ -76,54 +85,101 @@
     <div class="flex items-center">
       <!-- Menu Buttons -->
       <div
-        class="flex items-center h-12 space-x-2 text-gray-500 backdrop-blur-md rounded-3xl"
+        class="flex items-center h-11 space-x-2 text-gray-500 backdrop-blur-md rounded-3xl"
       >
         <!-- Home -->
         <NuxtLink
           to="/"
           class="py-3 px-4 rounded-3xl"
-          exact-active-class=" bg-black text-white text-white "
+          exact-active-class=" bg-black dark:bg-slate-100  text-white dark:text-gray-900  "
         >
-          <i class="fa fa-home"></i>
+          <PhosphorIconHouseSimple
+            class="block 1260:hidden"
+            :size="20"
+            weight="bold"
+          />
         </NuxtLink>
 
         <!-- Education -->
         <NuxtLink
           to="/education"
           class="py-3 px-4 rounded-3xl"
-          exact-active-class=" bg-black text-white text-white "
+          exact-active-class=" bg-black dark:bg-slate-100  text-white dark:text-gray-900  "
         >
-          <i class="fa-regular fa-user"></i>
+          <PhosphorIconArticle
+            class="block 1260:hidden"
+            :size="20"
+            weight="bold"
+          />
         </NuxtLink>
 
         <!-- Projects -->
         <NuxtLink
           to="/projects"
           class="py-3 px-4 rounded-3xl"
-          exact-active-class=" bg-black text-white text-white "
+          exact-active-class=" bg-black dark:bg-slate-100  text-white dark:text-gray-900  "
         >
-          <i class="fa-regular fa-rectangle-list"></i>
+          <PhosphorIconSquaresFour
+            class="block 1260:hidden"
+            :size="20"
+            weight="bold"
+          />
         </NuxtLink>
 
-        <!-- Blog -->
+        <!-- Contact -->
         <NuxtLink
-          to="/blog"
+          to="/contact"
           class="py-3 px-4 rounded-3xl"
-          exact-active-class=" bg-black text-white text-white "
+          exact-active-class=" bg-black dark:bg-slate-100  text-white dark:text-gray-900  "
         >
-          <i class="fa-solid fa-blog"></i>
+          <PhosphorIconEnvelope
+            class="block 1260:hidden"
+            :size="20"
+            weight="bold"
+          />
         </NuxtLink>
         <div class="flex justify-center items-center pl-3 space-x-3">
-          <button class="">
-            <i class="fa-solid fa-moon fa-sm"></i>
+          <button @click="toggleTheme">
+            <PhosphorIconSun v-if="isDarkMode" :size="20" weight="bold" />
+
+            <PhosphorIconMoonStars v-else :size="20" weight="bold" />
           </button>
-          <button
-            class="px-4 py-3 rounded-full text-slate-100 bg-primary-gradient"
+
+          <a
+            href="mailto:NikuMoradi@gmail.com"
+            class="px-4 py-3 rounded-full text-slate-100 bg-color-light dark:text-color-dark"
           >
-            <i class="fa fa-message fa-md"></i>
-          </button>
+            <PhosphorIconChatDots :size="20" weight="bold" />
+          </a>
         </div>
       </div>
     </div>
   </div>
 </template>
+<script setup>
+import { ref, onMounted } from "vue";
+
+const isDarkMode = ref(true);
+
+// Toggle between dark and light modes
+const toggleTheme = () => {
+  isDarkMode.value = !isDarkMode.value;
+
+  if (isDarkMode.value) {
+    document.documentElement.classList.add("dark"); // Add dark class to html tag
+    localStorage.setItem("theme", "dark"); // Add dark property to Local storage
+  } else {
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+  }
+};
+
+// Check and set the initial theme based on local storage
+onMounted(() => {
+  const storedTheme = localStorage.getItem("theme");
+  if (storedTheme === "dark") {
+    document.documentElement.classList.add("dark");
+    isDarkMode.value = true;
+  }
+});
+</script>

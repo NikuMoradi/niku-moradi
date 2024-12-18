@@ -1,9 +1,9 @@
 <template>
   <section id="education">
-    <div class="max-w-5xl min-h-screen my-20">
-      <div class="mb-6 780:mb-12">
+    <div class="max-w-5xl min-h-screen my-20 py-10">
+      <div class="mb-6 780:mb-12" data-aos="fade-up">
         <h3
-          class="text-3xl 780:text-4xl font-bold leading-normal bg-text-transparent bg-clip-text bg-custom-gradient text-transparent"
+          class="text-3xl 780:text-4xl font-bold leading-normal bg-text-transparent bg-clip-text text-color-light text-transparent dark:text-color-dark"
         >
           My Education
         </h3>
@@ -11,22 +11,28 @@
       <div class="flex flex-col">
         <!-- First Row -->
         <div
-          class="min-h-44 flex flex-col space-y-4 border-t border-gray-300 py-8 780:flex-row 780:space-x-4 780:space-y-0 780:justify-between"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="min-h-44 grid grid-cols-1 1000:grid-cols-12 gap-y-5 py-8 border-t border-gray-300 dark:border-[#303033]"
         >
           <!-- First Column -->
-          <div class="basis-1/6 flex-shrink-0 text-left text-gray-700 text-lg">
+          <div
+            class="col-span-12 1260:col-span-2 text-left text-gray-700 dark:text-gray-400 text-lg"
+          >
             <span>2019 - 2023</span>
           </div>
           <!-- Second Column -->
-          <div class="basis-4/12 flex-shrink-0 text-left">
-            <h5 class="text-gray-900 text-2xl font-bold">
+          <div class="col-span-12 1260:col-span-5 text-left">
+            <h5 class="text-gray-900 dark:text-slate-200 text-2xl font-bold">
               Bachelor's Degree in Software Engineering
             </h5>
-            <span class="text-gray-700 block">University Of Kurdistan</span>
+            <span class="text-gray-700 dark:text-gray-400 block"
+              >University Of Kurdistan</span
+            >
           </div>
           <!-- Third Column -->
           <div
-            class="basis-5/12 flex-shrink-0 text-left text-gray-700 text-md 780:px-4"
+            class="col-span-12 1260:col-span-5 text-left text-gray-700 dark:text-gray-400 text-md"
           >
             <p>
               Developed a solid understanding of software development
@@ -38,24 +44,28 @@
 
         <!-- Second Row -->
         <div
-          class="min-h-44 flex flex-col space-y-4 border-t border-gray-300 py-8 780:flex-row 780:space-x-4 780:space-y-0 780:justify-between"
+          data-aos="fade-up"
+          data-aos-delay="250"
+          class="min-h-44 grid grid-cols-1 1000:grid-cols-12 gap-y-5 py-8 border-t border-gray-300 dark:border-[#303033]"
         >
           <!-- First Column -->
-          <div class="basis-1/6 flex-shrink-0 text-left text-gray-700 text-lg">
+          <div
+            class="col-span-12 1260:col-span-2 text-left text-gray-700 dark:text-gray-400 text-lg"
+          >
             <span>2023 - 2024</span>
           </div>
           <!-- Second Column -->
-          <div class="basis-4/12 flex-shrink-0 text-left text-gray-700 text-lg">
-            <h5 class="text-gray-900 text-2xl font-bold">
+          <div class="col-span-12 1260:col-span-5 text-left">
+            <h5 class="text-gray-900 dark:text-slate-200 text-2xl font-bold">
               Frontend Development Internship
             </h5>
-            <span class="text-gray-700 block"
+            <span class="text-gray-700 dark:text-gray-400 block"
               >Kermanshah Technical Building</span
             >
           </div>
           <!-- Third Column -->
           <div
-            class="basis-5/12 flex-shrink-0 text-left text-gray-700 text-md 780:px-4"
+            class="col-span-12 1260:col-span-5 text-left text-gray-700 dark:text-gray-400 text-md"
           >
             <p>
               Contributed to the development of components for a software
@@ -68,20 +78,28 @@
 
         <!-- Third Row -->
         <div
-          class="min-h-44 flex flex-col space-y-4 border-y border-gray-300 py-8 780:flex-row 780:space-x-4 780:space-y-0 780:justify-between"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="min-h-44 grid grid-cols-1 1000:grid-cols-12 gap-y-5 py-8 border-t border-gray-300 dark:border-[#303033]"
         >
           <!-- First Column -->
-          <div class="basis-1/6 flex-shrink-0 text-left text-gray-700 text-lg">
+          <div
+            class="col-span-12 1260:col-span-2 text-left text-gray-700 dark:text-gray-400 text-lg"
+          >
             <span>2023 - Present</span>
           </div>
           <!-- Second Column -->
-          <div class="basis-4/12 flex-shrink-0 text-left">
-            <h5 class="text-gray-900 text-2xl font-bold">Ongoing learning</h5>
-            <span class="text-gray-700 block"> Udemy Courses</span>
+          <div class="col-span-12 1260:col-span-5 text-left">
+            <h5 class="text-gray-900 dark:text-slate-200 text-2xl font-bold">
+              Ongoing learning
+            </h5>
+            <span class="text-gray-700 dark:text-gray-400 block">
+              Udemy Courses</span
+            >
           </div>
           <!-- Third Column -->
           <div
-            class="basis-5/12 flex-shrink-0 text-left text-gray-700 text-md 780:px-4"
+            class="col-span-12 1260:col-span-5 text-left text-gray-700 dark:text-gray-400 text-md"
           >
             <p>
               Improving skills in responsive design with HTML, CSS, and

@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  plugins: [
+    { src: "~/plugins/aos.client.js", mode: "client" }, // Load AOS only on the client-side
+  ],
+  modules: ["nuxt-phosphor-icons"],
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
   css: ["~/assets/css/main.css"],
@@ -23,34 +27,9 @@ export default defineNuxtConfig({
       link: [
         {
           rel: "stylesheet",
-          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
-        },
-        {
-          rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap",
         },
       ],
     },
   },
 });
-
-//
-// export default defineNuxtConfig({
-//   compatibilityDate: "2024-11-01",
-//   devtools: { enabled: true },
-//   app: {
-//     head: {
-//       title: "My Nuxt App",
-//       meta: [{ name: "description", content: "This is my Nuxt app!" }],
-//       link: [
-//         { rel: "icon", href: "/favicon.ico" },
-//       ],
-//       script: [
-//         {
-//           src: "https://cdn.tailwindcss.com",
-//           defer: true,
-//         },
-//       ],
-//     },
-//   },
-// });
