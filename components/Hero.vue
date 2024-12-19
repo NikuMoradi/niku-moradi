@@ -47,7 +47,8 @@
         data-aos-delay="400"
       >
         <button
-          class="flex items-center space-x-2 py-3 px-5 text-md border border-gray-400 dark:border-[#303033] rounded-3xl tracking-wide text-gray-800 dark:text-slate-200 font-bold hover:opacity-80"
+          @click="scrollToProjects"
+          class="flex items-center space-x-2 py-4 w-full justify-center 640:w-auto 640:py-3 640:px-5 text-md border border-gray-400 dark:border-[#303033] rounded-3xl tracking-wide text-gray-800 dark:text-slate-200 font-bold hover:opacity-80"
         >
           <span>My Works</span>
           <PhosphorIconSquaresFour :size="20" weight="bold" />
@@ -82,6 +83,14 @@ export default {
       // Typed.js is not supported, show fallback text
       this.showFallbackText = true;
     }
+  },
+  methods: {
+    scrollToProjects() {
+      const projectsSection = document.getElementById("projects");
+      if (projectsSection) {
+        projectsSection.scrollIntoView({ behavior: "smooth" });
+      }
+    },
   },
 };
 </script>

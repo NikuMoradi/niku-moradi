@@ -4,3 +4,4 @@ All content from your pages will automatically be placed inside the NuxtPage slo
 <template>
   <NuxtLayout />
 </template>
+<style></style>

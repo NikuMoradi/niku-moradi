@@ -54,10 +54,10 @@
         ></textarea>
 
         <!-- Submit Button -->
-        <div data-aos="fade-up" class="text-left">
+        <div data-aos="fade-up" class="w-full 780:text-left">
           <button
             type="submit"
-            class="flex items-center space-x-1 py-3 px-10 rounded-3xl text-lg text-slate-100 bg-color-light dark:bg-color-dark hover:opacity-90 transition duration-200"
+            class="w-full 780:w-auto flex items-center justify-center space-x-1 py-3 px-10 rounded-3xl text-lg text-slate-100 bg-color-light dark:bg-color-dark hover:opacity-90 transition duration-200"
           >
             <span>Send Message</span>
             <PhosphorIconPaperPlaneTilt :size="20" weight="bold" />

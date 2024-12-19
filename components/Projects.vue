@@ -1,6 +1,6 @@
 <template>
   <section id="projects">
-    <div class="max-w-5xl min-h-screen my-20 py-10">
+    <div class="w-full max-w-5xl min-h-screen my-10 py-10">
       <div class="mb-4 780:mb-9" data-aos="fade-up">
         <h3
           class="text-3xl 780:text-4xl font-bold leading-normal bg-text-transparent bg-clip-text text-color-light text-transparent dark:text-color-dark"
@@ -10,16 +10,16 @@
       </div>
 
       <div
-        class="flex flex-col space-y-7 1260:flex-row 1280:space-x-14 1260:space-y-0"
+        class="flex flex-col space-y-7 640:flex-row 640:space-x-14 640:space-y-0 780:flex-col 780:space-y-7 780:space-x-0 1180:flex-row 1180:space-x-14 1180:space-y-0"
       >
         <!-- Project-1  -->
         <div
           data-aos="fade-up"
           data-aos-delay="200"
-          class="w-[24rem] h-[31rem] relative flex flex-col space-y-3 border border-gray-300 dark:border-[#303033] rounded-3xl"
+          class="w-full h-[33rem] 640:w-[20rem] 640:h-[34rem] 780:w-[25rem] relative flex flex-col space-y-3 border border-gray-300 dark:border-[#303033] rounded-3xl"
         >
           <!-- Image -->
-          <div class="w-full h-[14rem] overflow-hidden rounded-t-3xl">
+          <div class="w-full h-[14rem] overflow-hidden p-4">
             <img
               src="/assets/img/cssGenPre-1.png"
               alt="Project Title"
@@ -58,11 +58,11 @@
         <div
           data-aos="fade-up"
           data-aos-delay="400"
-          class="relative w-[24rem] h-[31rem] flex flex-col space-y-3 border border-gray-300 dark:border-[#303033] rounded-3xl"
+          class="w-full h-[33rem] 640:w-[20rem] 640:h-[34rem] 780:w-[25rem] relative flex flex-col space-y-3 border border-gray-300 dark:border-[#303033] rounded-3xl"
         >
           <!-- Image -->
 
-          <div class="w-full h-[14rem] overflow-hidden rounded-t-3xl">
+          <div class="w-full h-[14rem] overflow-hidden p-4">
             <img
               src="/assets/img/E-commerce.png"
               alt="Project Title"
