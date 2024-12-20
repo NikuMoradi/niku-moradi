@@ -16,7 +16,7 @@
         <div
           data-aos="fade-up"
           data-aos-delay="200"
-          class="w-full h-[33rem] 640:w-[20rem] 640:h-[34rem] 780:w-[25rem] relative flex flex-col space-y-3 border border-gray-300 dark:border-[#303033] rounded-3xl"
+          class="w-full h-[35rem] 640:w-[20rem] 640:h-[34rem] 780:w-[25rem] relative flex flex-col space-y-3 border border-gray-300 dark:border-[#303033] rounded-3xl"
         >
           <!-- Image -->
           <div class="w-full h-[14rem] overflow-hidden p-4">
@@ -41,15 +41,26 @@
               and preview styles effortlessly. Developed as part of my
               internship for a site-builder app.
             </p>
-            <div class="absolute bottom-5 flex space-x-2">
-              <span
-                class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
-                >vue.js</span
+
+            <div
+              class="absolute bottom-5 left-0 right-0 flex flex-col space-y-3 640:flex-row 640:justify-between 640:items-center 640:space-y-0 px-3"
+            >
+              <div class="flex space-x-2">
+                <span
+                  class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
+                  >vue.js</span
+                >
+                <span
+                  class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
+                  >quasar</span
+                >
+              </div>
+              <button
+                class="block 640:hidden transition-colors duration-300 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-indigo-500 hover:to-blue-500 text-white py-2 px-4 rounded-3xl shadow-md font-medium text-xs 640:text-sm"
+                onclick="window.open('https://css-generator-m.vercel.app', '_blank')"
               >
-              <span
-                class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
-                >quasar</span
-              >
+                Visit Site
+              </button>
             </div>
           </div>
         </div>
@@ -58,7 +69,7 @@
         <div
           data-aos="fade-up"
           data-aos-delay="400"
-          class="w-full h-[33rem] 640:w-[20rem] 640:h-[34rem] 780:w-[25rem] relative flex flex-col space-y-3 border border-gray-300 dark:border-[#303033] rounded-3xl"
+          class="w-full h-[35rem] 640:w-[20rem] 640:h-[34rem] 780:w-[25rem] relative flex flex-col space-y-3 border border-gray-300 dark:border-[#303033] rounded-3xl"
         >
           <!-- Image -->
 
