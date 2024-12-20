@@ -56,7 +56,7 @@
                 >
               </div>
               <button
-                class="block 640:hidden transition-colors duration-300 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-indigo-500 hover:to-blue-500 text-white py-2 px-4 rounded-3xl shadow-md font-medium text-xs 640:text-sm"
+                class="640:hidden flex items-center justify-center py-2 space-x-2 rounded-3xl text-lg text-slate-100 bg-color-light dark:bg-color-dark hover:opacity-90 transition duration-300"
                 onclick="window.open('https://css-generator-m.vercel.app', '_blank')"
               >
                 Visit Site
