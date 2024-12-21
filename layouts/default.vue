@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed z-20 h-14 bottom-7 left-1/2 -translate-x-1/2 780:w-full 780:top-5 780:pl-[20rem] 1000:pl-[29rem] 780:pr-6"
+    class="fixed z-20 h-14 bottom-1 left-1/2 -translate-x-1/2 780:w-full 780:top-5 780:pl-[20rem] 1000:pl-[29rem] 780:pr-6"
   >
     <Navbar />
   </header>
