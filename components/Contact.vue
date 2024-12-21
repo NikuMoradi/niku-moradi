@@ -1,6 +1,6 @@
 <template>
   <section id="contact">
-    <div class="max-w-5xl min-h-screen 780:mt-20 780:py-10">
+    <div class="max-w-5xl min-h-screen mt-10 780:mt-20 780:py-10">
       <div class="mb-6 780:mb-12" data-aos="fade-up">
         <h3
           class="text-3xl 780:text-4xl font-bold leading-normal bg-text-transparent bg-clip-text text-color-light text-transparent dark:text-color-dark"
