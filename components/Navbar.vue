@@ -66,8 +66,13 @@
           @click="toggleTheme"
           class="px-4 h-11 text-gray-500 backdrop-blur-md rounded-full hover:text-gray-700 dark:hover:text-slate-200 transition duration-300"
         >
-          <PhosphorIconSun v-if="isDarkMode" :size="20" weight="bold" />
-          <PhosphorIconMoonStars v-else :size="20" weight="bold" />
+          <PhosphorIconMoonStars
+            class="block dark:hidden"
+            :size="20"
+            weight="bold"
+          />
+
+          <PhosphorIconSun class="hidden dark:block" :size="20" weight="bold" />
         </button>
         <a
           href="mailto:NikuMoradi@gmail.com"
@@ -140,9 +145,16 @@
         </NuxtLink>
         <div class="flex justify-center items-center pl-3 space-x-3">
           <button @click="toggleTheme">
-            <PhosphorIconSun v-if="isDarkMode" :size="20" weight="bold" />
-
-            <PhosphorIconMoonStars v-else :size="20" weight="bold" />
+            <PhosphorIconMoonStars
+              class="block dark:hidden"
+              :size="20"
+              weight="bold"
+            />
+            <PhosphorIconSun
+              class="hidden dark:block"
+              :size="20"
+              weight="bold"
+            />
           </button>
 
           <a
@@ -167,10 +179,10 @@ const toggleTheme = () => {
 
   if (isDarkMode.value) {
     document.documentElement.classList.add("dark"); // Add dark class to html tag
-    localStorage.setItem("theme", "dark"); // Add dark property to Local storage
+    // localStorage.setItem("theme", "dark"); // Add dark property to Local storage
   } else {
     document.documentElement.classList.remove("dark");
-    localStorage.setItem("theme", "light");
+    // localStorage.setItem("theme", "light");
   }
 };
 

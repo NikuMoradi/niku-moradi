@@ -1,17 +1,15 @@
 <template>
-  <div class="w-full">
-    <header
-      class="fixed z-20 h-14 bottom-7 left-1/2 -translate-x-1/2 780:w-full 780:top-5 780:pl-[20rem] 1000:pl-[29rem] 780:pr-6"
-    >
-      <Navbar />
-    </header>
-    <aside class="fixed z-20 hidden 780:block top-5">
-      <LeftPanel />
-    </aside>
-    <main class="p-6 780:pl-[20rem] 1000:pl-[29rem]">
-      <NuxtPage />
-    </main>
-  </div>
+  <header
+    class="fixed z-20 h-14 bottom-7 left-1/2 -translate-x-1/2 780:w-full 780:top-5 780:pl-[20rem] 1000:pl-[29rem] 780:pr-6"
+  >
+    <Navbar />
+  </header>
+  <aside class="fixed z-20 hidden 780:block top-5 left-2">
+    <LeftPanel />
+  </aside>
+  <main class="p-6 780:pl-[20rem] 1000:pl-[29rem]">
+    <NuxtPage />
+  </main>
 </template>
 <style>
 * {
