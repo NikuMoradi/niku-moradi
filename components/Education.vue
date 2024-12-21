@@ -1,6 +1,6 @@
 <template>
   <section id="education">
-    <div class="max-w-5xl min-h-screen py-10">
+    <div class="max-w-5xl min-h-screen py-14">
       <div class="mb-6 780:mb-12" data-aos="fade-up">
         <h3
           class="text-3xl 780:text-4xl font-bold leading-normal bg-text-transparent bg-clip-text text-color-light text-transparent dark:text-color-dark"
