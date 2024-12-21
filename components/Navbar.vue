@@ -179,19 +179,27 @@ const toggleTheme = () => {
 
   if (isDarkMode.value) {
     document.documentElement.classList.add("dark"); // Add dark class to html tag
-    // localStorage.setItem("theme", "dark"); // Add dark property to Local storage
+    localStorage.setItem("theme", "dark"); // Add dark property to Local storage
   } else {
     document.documentElement.classList.remove("dark");
-    // localStorage.setItem("theme", "light");
+    localStorage.setItem("theme", "light");
   }
 };
 
 // Check and set the initial theme based on local storage
 onMounted(() => {
   const storedTheme = localStorage.getItem("theme");
-  if (storedTheme === "dark") {
+
+  if (storedTheme === "dark" || !storedTheme) {
+    // Default to dark mode if no theme is set
     document.documentElement.classList.add("dark");
     isDarkMode.value = true;
+    if (!storedTheme) {
+      localStorage.setItem("theme", "dark"); // Save the default theme
+    }
+  } else {
+    document.documentElement.classList.remove("dark");
+    isDarkMode.value = false;
   }
 });
 </script>
