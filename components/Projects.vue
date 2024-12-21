@@ -1,6 +1,6 @@
 <template>
   <section id="projects">
-    <div class="w-full max-w-5xl min-h-screen my-10 py-10">
+    <div class="w-full max-w-5xl min-h-screen 780:my-10 780:py-10">
       <div class="mb-4 780:mb-9" data-aos="fade-up">
         <h3
           class="text-3xl 780:text-4xl font-bold leading-normal bg-text-transparent bg-clip-text text-color-light text-transparent dark:text-color-dark"
