@@ -17,7 +17,7 @@
         <p class="text-xs tracking-wider">Frontend Developer</p>
       </div>
 
-      <!-- middle -->
+      <!-- Middle -->
       <div class="w-3/4 flex flex-col 780:overflow-y-auto 780:scrollbar-hide">
         <!-- table -->
         <div
