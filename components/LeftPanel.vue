@@ -30,7 +30,7 @@
             </li>
             <li class="flex justify-between">
               <h6>City:</h6>
-              <span class="text-gray-500 dark:text-gray-300">Kermanshah</span>
+              <span class="text-gray-500 dark:text-gray-300">Esfahan</span>
             </li>
             <li class="flex justify-between">
               <h6>Age:</h6>
