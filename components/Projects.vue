@@ -75,18 +75,18 @@
 
           <div class="w-full h-[14rem] overflow-hidden p-4">
             <img
-              src="/assets/img/E-commerce.png"
+              src="/assets/img/ecommerce.png"
               alt="Project Title"
               class="w-full h-full object-cover"
             />
           </div>
           <!-- Text -->
           <div class="flex flex-col space-y-3 p-4">
-            <a href="https://css-generator-m.vercel.app/#/" target="_blank">
+            <a href="https://dgk.vercel.app/" target="_blank">
               <h4
                 class="text-zinc-800 dark:text-slate-100 font-bold text-xl hover:opacity-70 duration-200"
               >
-                SoundM e-commerce shop
+                Digikala Simulation
               </h4>
             </a>
             <p class="dark:text-gray-200">Under development...</p>
@@ -102,6 +102,10 @@
               <span
                 class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
                 >Tailwind</span
+              >
+              <span
+                class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
+                >Supabase</span
               >
             </div>
           </div>
