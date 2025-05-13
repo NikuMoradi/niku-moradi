@@ -86,7 +86,7 @@
               <h4
                 class="text-zinc-800 dark:text-slate-100 font-bold text-xl hover:opacity-70 duration-200"
               >
-                Digikala Simulation
+                Digikala Clone
               </h4>
             </a>
             <p class="dark:text-gray-200">Under development...</p>
