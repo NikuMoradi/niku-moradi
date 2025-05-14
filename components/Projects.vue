@@ -35,7 +35,7 @@
                 Css Generator Tool
               </h4>
             </a>
-            <p class="dark:text-gray-200">
+            <p class="dark:text-gray-200 text-sm 360:text-base">
               This tool is perfect for beginners looking to learn and practice
               CSS, offering an intuitive interface that makes it easy to create
               and preview styles effortlessly. Developed as part of my
@@ -72,7 +72,6 @@
           class="w-full h-[35rem] 640:w-[20rem] 640:h-[34rem] 780:w-[25rem] relative flex flex-col space-y-3 border border-gray-300 dark:border-[#303033] rounded-3xl"
         >
           <!-- Image -->
-
           <div class="w-full h-[14rem] overflow-hidden p-4">
             <img
               src="/assets/img/ecommerce.png"
@@ -80,7 +79,7 @@
               class="w-full h-full object-cover"
             />
           </div>
-          <!-- Text -->
+          <!-- title -->
           <div class="flex flex-col space-y-3 p-4">
             <a href="https://dgk.vercel.app/" target="_blank">
               <h4
@@ -89,24 +88,38 @@
                 Digikala Clone
               </h4>
             </a>
-            <p class="dark:text-gray-200">Under development...</p>
-            <div class="flex space-x-2 absolute bottom-5">
-              <span
-                class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
-                >vue.js</span
+            <p class="dark:text-gray-200 text-sm 360:text-base">
+              Under development...
+            </p>
+
+            <div
+              class="absolute bottom-5 left-0 right-0 flex flex-col space-y-3 640:flex-row 640:justify-between 640:items-center 640:space-y-0 px-3"
+            >
+              <!-- technologies -->
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
+                  >vue.js</span
+                >
+                <span
+                  class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
+                  >Nuxt.js</span
+                >
+                <span
+                  class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
+                  >Tailwind</span
+                >
+                <span
+                  class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
+                  >Supabase</span
+                >
+              </div>
+              <button
+                class="640:hidden flex items-center justify-center py-2 space-x-2 rounded-3xl text-lg text-slate-100 bg-color-light dark:bg-color-dark hover:opacity-90 transition duration-300"
+                onclick="window.open('https://dgk.vercel.app/', '_blank')"
               >
-              <span
-                class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
-                >Nuxt.js</span
-              >
-              <span
-                class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
-                >Tailwind</span
-              >
-              <span
-                class="border border-gray-300 dark:border-[#303033] rounded-3xl py-1 px-4 dark:text-gray-200 pointer-events-none"
-                >Supabase</span
-              >
+                Visit Site
+              </button>
             </div>
           </div>
         </div>

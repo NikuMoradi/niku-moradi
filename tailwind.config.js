@@ -12,6 +12,7 @@ export default {
 
   theme: {
     screens: {
+      360: "360px",
       640: "640px",
       780: "780px",
       1000: "1000px",
